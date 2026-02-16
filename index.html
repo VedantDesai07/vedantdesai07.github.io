@@ -224,8 +224,8 @@
         .numbered-heading::before {
             position: relative;
             bottom: 4px;
-            counter-increment:  1;
-            content: '0' counter() '.';
+            counter-increment: section 1;
+            content: '0' counter(section) '.';
             margin-right: 10px;
             color: var(--green);
             font-family: var(--font-mono);
@@ -921,7 +921,7 @@
                         </div>
                     </div>
                     <div class="project-image">
-                        <img src="project1.jpg" alt="Project Screenshot">
+                        <img src="project1.png" alt="Project Screenshot">
                     </div>
                 </li>
 
@@ -945,7 +945,7 @@
                         </div>
                     </div>
                     <div class="project-image">
-                         <img src="project 2.jpg" alt="Project Screenshot">
+                         <img src="project 2.png" alt="Project Screenshot">
                     </div>
                 </li>
             </ul>
