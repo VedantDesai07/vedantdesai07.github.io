@@ -127,6 +127,7 @@
 
         /* Main Content */
         main {
+            counter-reset: section;
             padding: 0 150px;
             max-width: 1600px;
             margin: 0 auto;
@@ -223,8 +224,8 @@
         .numbered-heading::before {
             position: relative;
             bottom: 4px;
-            counter-increment: section 1;
-            content: '0' counter(section) '.';
+            counter-increment:  1;
+            content: '0' counter() '.';
             margin-right: 10px;
             color: var(--green);
             font-family: var(--font-mono);
@@ -242,7 +243,7 @@
             background-color: var(--lightest-navy);
         }
 
-        /* About Section */
+        /* About  */
         .about-content {
             display: grid;
             grid-template-columns: 3fr 2fr;
